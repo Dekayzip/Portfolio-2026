@@ -10,7 +10,7 @@ export const siteConfig = {
   headline: ["Data, Business &", "Healthcare", "Analyst."],
   subheadline: "MS Data Science @ DePaul University · Chicago, IL",
   bio: "MS Data Science candidate with internship experience building automated reporting workflows, funnel and KPI dashboards, and segmentation analyses for an early-stage startup. Skilled in Python, SQL, and Tableau, with a focus on turning messy data into clear recommendations for founders and cross-functional teams.",
-  availability: "Seeking Data Analyst, Business Analyst, or Growth Analyst roles starting August 2026.",
+  availability: "Open to Data Analyst, Business Analyst, Healthcare Data Analyst, and Growth Analyst roles. Bringing analytical depth, healthcare domain knowledge, and a track record of turning data into decisions that move the business.",
 
   // --- Contact ---
   email: "dharanirrnk@gmail.com",
@@ -54,6 +54,17 @@ export const education = [
 ];
 
 export const experience = [
+  {
+    role: "Healthcare Data Analytics Extern",
+    company: "TruBridge (via Extern)",
+    location: "Remote",
+    period: "Apr 2026 – Present",
+    highlights: [
+      "Selected for TruBridge's 8-week healthcare data analytics externship focused on social determinants of health (SDOH) and their impact on patient outcomes, access to care, and public-health decision-making.",
+      "Defining an independent research question on SDOH factors (income, education, housing, care access); collecting and preprocessing public-health datasets in Python (Google Colab) and running statistical and correlational EDA to surface trends in health outcomes.",
+      "Building a Power BI dashboard and stakeholder presentation translating findings into clear recommendations for healthcare decision-makers, with weekly review sessions led by TruBridge analytics professionals.",
+    ],
+  },
   {
     role: "Graduate Student Ambassador",
     company: "DePaul University – CDM",

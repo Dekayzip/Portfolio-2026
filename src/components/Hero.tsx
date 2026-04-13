@@ -12,7 +12,7 @@ const greetings = [
   "Hello! Fun fact: I found this greeting in O(1) time. 🧠",
   "Hey! My Tableau dashboard loaded before you finished hovering. ⚡",
   "Oh, you're hovering? Bold move. I respect the curiosity. 🤝",
-  "Hi! Don't worry — I've already de-identified your data. 🔒",
+  "Hi! Don't worry, I've already de-identified your data. 🔒",
   "Hey! I put the 'fun' in functional data pipelines. 🚀",
   "Hello! Data doesn't lie. Right now it says... let's connect. 📣",
   "Oh hey! I was just EDA-ing your visit. Interesting patterns. 🔍",

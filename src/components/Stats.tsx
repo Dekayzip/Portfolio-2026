@@ -52,7 +52,7 @@ export default function Stats() {
               <p className="text-xs font-semibold text-zinc-300 mt-1 leading-tight">
                 {kpi.label}
               </p>
-              <p className="text-[10px] text-zinc-600 leading-tight">{kpi.sub}</p>
+              <p className="text-[10px] text-[#9ca3af] leading-tight">{kpi.sub}</p>
             </div>
           ))}
         </div>
