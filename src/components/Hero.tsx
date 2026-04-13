@@ -142,11 +142,11 @@ export default function Hero() {
           </div>
 
           {/* Right: Profile image */}
-          <div className="hidden lg:flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 mt-2 lg:mt-0">
             <div className="relative">
-              {/* Greeting dialogue bubble — glass panel */}
+              {/* Greeting dialogue bubble - glass panel, desktop only */}
               <div
-                className={`absolute right-full top-1/2 -translate-y-1/2 mr-4 w-56 z-10 pointer-events-none transition-all duration-300 ease-out ${
+                className={`hidden lg:block absolute right-full top-1/2 -translate-y-1/2 mr-4 w-56 z-10 pointer-events-none transition-all duration-300 ease-out ${
                   hovering ? "opacity-100 translate-x-0" : "opacity-0 translate-x-3"
                 }`}
               >
@@ -158,7 +158,7 @@ export default function Hero() {
 
               {/* Photo */}
               <div
-                className="relative w-72 h-80 rounded-3xl overflow-hidden shadow-2xl cursor-default"
+                className="relative w-[65vw] h-[72vw] lg:w-72 lg:h-80 rounded-3xl overflow-hidden shadow-2xl cursor-default"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >

@@ -33,7 +33,7 @@ export default function ThemeToggle() {
       className={`relative flex items-center w-[52px] h-[26px] rounded-full border transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-1 ${
         dark
           ? "bg-zinc-800 border-zinc-700"
-          : "bg-white/20 border-white/30"
+          : "bg-neutral-100 border-neutral-300"
       }`}
     >
       <span
