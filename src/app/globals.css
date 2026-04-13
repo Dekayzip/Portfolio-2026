@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme tokens ─────────────────────────────────── */
+:root {
+  --bg-page: #ffffff;
+  --bg-surface: #fafafa;
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --text-muted: #71717a;
+  --border: #e4e4e7;
+  --background: #ffffff;
+  --foreground: #09090b;
+}
+
+.dark {
+  --bg-page: #111113;
+  --bg-surface: #18181b;
+  --text-primary: #f0f0f2;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border: #27272a;
+  --background: #111113;
+  --foreground: #f0f0f2;
+}
+
+/* ── Base ─────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.15s ease;
+}
+
+::selection {
+  background: #09090b;
+  color: #fafafa;
+}
+
+.dark ::selection {
+  background: #f0f0f2;
+  color: #111113;
+}
+
+/* ── Scroll-triggered fade-up utility ────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

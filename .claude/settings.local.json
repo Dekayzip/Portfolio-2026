@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /C \"node --version && npm --version\")",
+      "Read(//c/Users/dhara/AppData/Roaming/**)",
+      "Read(//c/Users/dhara/AppData/Roaming/npm/**)",
+      "Bash(\"/c/Program Files/RStudio/resources/app/bin/node/node.exe\" --version)",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' -e 'const path = require\\('\\\\''path'\\\\''\\); console.log\\(path.dirname\\(process.execPath\\)\\)')",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' -e 'console.log\\(process.version, process.execPath\\)')",
+      "Bash(cmd.exe /C \"where node & where npm & node --version & npm --version\")",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' C:/Users/dhara/AppData/Local/Temp/bootstrap_npm.js)",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' C:/Users/dhara/AppData/Local/Temp/extract_npm.js)",
+      "Bash(powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\dhara\\\\AppData\\\\Local\\\\Temp\\\\extract_npm2.ps1\")",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' C:/Users/dhara/AppData/Local/Temp/npm_bootstrap/npm_pkg/package/bin/npm-cli.js --version)",
+      "Bash('/c/Program Files/RStudio/resources/app/bin/node/node.exe' C:/Users/dhara/AppData/Local/Temp/npm_bootstrap/npm_pkg/package/bin/npm-cli.js install --prefer-offline)",
+      "Bash(rm -rf node_modules)",
+      "Bash(powershell.exe -NoProfile -Command ':*)",
+      "Bash(Select-String -NotMatch \"^$\")",
+      "Bash(npm run:*)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:www.linkedin.com)"
+    ]
+  }
+}
