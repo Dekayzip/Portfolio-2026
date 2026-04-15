@@ -234,6 +234,7 @@ export const projects = [
     tech: ["Blockchain", "Machine Learning", "Cloud", "Full-Stack", "HIPAA"],
     github: "#",
     live: "https://drive.google.com/drive/folders/17Nvg7zeeF1bUhqZml7rZVanzI3Wd69Eo",
+    image: "/blockchain-figure.png",
     featured: false,
     gradient: "from-pink-500 to-rose-600",
   },

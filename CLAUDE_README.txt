@@ -230,5 +230,8 @@ CHANGELOG (session-by-session)
     - About.tsx date badge CSS fix: added self-start to experience period span
       so badge shrinks to text width on mobile instead of stretching full-width
     - GitHub CLI (gh) installed and authenticated as Dekayzip
+    - Blockchain project card: image preview added (public/blockchain-figure.png)
+      Projects.tsx updated to support optional image field on any project card;
+      falls back to gradient if no image set
 
 ================================================================================

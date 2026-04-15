@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/data/content";
 
@@ -54,22 +55,31 @@ export default function Projects() {
                 project.featured ? "ring-1 ring-zinc-900/5 dark:ring-white/[0.08]" : ""
               }`}
             >
-              {/* Gradient thumbnail */}
-              <div
-                className={`h-44 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
-              >
+              {/* Thumbnail — image if provided, otherwise gradient */}
+              <div className={`h-44 relative overflow-hidden ${!project.image ? `bg-gradient-to-br ${project.gradient}` : "bg-zinc-100 dark:bg-zinc-800"}`}>
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover object-center"
+                  />
+                ) : (
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_60%)]"
+                  />
+                )}
                 {project.featured && (
-                  <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-white/10 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
+                  <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
                     Featured
                   </span>
                 )}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_60%)]"
-                />
-                <div className="absolute bottom-4 left-4 text-white/30 font-black text-6xl leading-none select-none">
-                  0{i + 1}
-                </div>
+                {!project.image && (
+                  <div className="absolute bottom-4 left-4 text-white/30 font-black text-6xl leading-none select-none">
+                    0{i + 1}
+                  </div>
+                )}
               </div>
 
               {/* Card body */}
