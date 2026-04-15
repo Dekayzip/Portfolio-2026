@@ -110,7 +110,7 @@ export default function About() {
                           {exp.company} · {exp.location}
                         </p>
                       </div>
-                      <span className="text-xs font-medium text-zinc-400 shrink-0 mt-0.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full">
+                      <span className="text-xs font-medium text-zinc-400 shrink-0 self-start mt-0.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full">
                         {exp.period}
                       </span>
                     </div>

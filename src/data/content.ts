@@ -19,10 +19,10 @@ export const siteConfig = {
 
   // --- Social links --- TODO: replace # with real URLs
   socials: {
-    linkedin: "https://linkedin.com/in/dharani-kommireddi", // TODO: confirm exact URL
+    linkedin: "https://www.linkedin.com/in/k-dharani/",
     github: "https://github.com/dekayzip",
     portfolio: "https://dekayzip.github.io/My-Portfolio/#",
-    credly: "https://www.credly.com/users/dharani-kommireddi", // TODO: confirm exact URL
+    credly: "https://www.credly.com/users/dharanirrnk",
   },
 
   resume: "/resume.pdf",
@@ -208,12 +208,12 @@ export const projects = [
     gradient: "from-indigo-500 to-blue-600",
   },
   {
-    title: "Readmission Risk Modeling & Dashboard",
+    title: "Rainfall Prediction – Classification Model",
     description:
-      "Classification models on 100,000+ patient encounter records predicting 30-day readmission risk (AUC 0.681); ran demographic subgroup fairness checks to validate consistent performance across population segments. Tableau dashboard structured around the CDC HI-5 intervention framework, visualizing risk factors (LOS, diagnosis codes, comorbidities) for non-technical users.",
-    tech: ["Python", "Tableau", "Scikit-learn", "Healthcare Analytics", "CDC HI-5"],
-    github: "#", // TODO
-    live: "#", // TODO
+      "Machine learning pipeline predicting rainfall occurrence from historical meteorological data. Engineered features across weather variables (temperature, humidity, wind speed, pressure) and benchmarked Logistic Regression, Random Forest, and XGBoost classifiers, evaluating tradeoffs via accuracy, precision-recall curves, and ROC-AUC. Includes full EDA and model performance comparisons.",
+    tech: ["Python", "Scikit-learn", "Pandas", "Random Forest", "XGBoost"],
+    github: "https://github.com/dekayzip/Rainfall-Prediction",
+    live: "#",
     featured: true,
     gradient: "from-teal-500 to-emerald-600",
   },
@@ -232,8 +232,8 @@ export const projects = [
     description:
       "Co-designed a HIPAA-aware cloud EMR prototype with role-based authentication (patient/doctor/admin), blockchain-based interaction logging for tamper-resistant audit trails, and a Bag-of-Words ML classifier for automated disease categorization and record anonymization. Published in IRJMETS Vol. 6 (Impact Factor: 7.868).",
     tech: ["Blockchain", "Machine Learning", "Cloud", "Full-Stack", "HIPAA"],
-    github: "#", // TODO
-    live: "#", // TODO: add paper link
+    github: "#",
+    live: "https://drive.google.com/drive/folders/17Nvg7zeeF1bUhqZml7rZVanzI3Wd69Eo",
     featured: false,
     gradient: "from-pink-500 to-rose-600",
   },
