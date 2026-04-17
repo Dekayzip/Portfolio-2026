@@ -38,9 +38,9 @@ export default function Skills() {
             What I bring
           </p>
           <h2 className="reveal text-4xl sm:text-5xl font-black tracking-tighter text-white max-w-lg leading-tight">
-            Skills that fuel
+            What I bring to
             <br />
-            <span className="italic text-zinc-400">my passion.</span>
+            <span className="italic text-zinc-400">the table.</span>
           </h2>
         </div>
 
@@ -54,7 +54,7 @@ export default function Skills() {
             >
               {/* Card number */}
               <span className="absolute top-4 right-5 text-xs font-mono text-white/20 group-hover:text-white/40 transition-colors">
-                0{i + 1}
+                {String(i + 1).padStart(2, "0")}
               </span>
 
               {/* Category title */}

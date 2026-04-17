@@ -7,7 +7,7 @@ export const siteConfig = {
   name: "Dharani Kommireddi",
   initials: "DK",
   tagline: "data · dashboards · decisions",
-  headline: ["Data, Business &", "Healthcare", "Analyst."],
+  headline: ["Data, Business & Healthcare", "Analyst."],
   subheadline: "MS Data Science @ DePaul University · Chicago, IL",
   bio: "MS Data Science candidate with internship experience building automated reporting workflows, funnel and KPI dashboards, and segmentation analyses for an early-stage startup. Skilled in Python, SQL, and Tableau, with a focus on turning messy data into clear recommendations for founders and cross-functional teams.",
   availability: "Open to Data Analyst, Business Analyst, Healthcare Data Analyst, and Growth Analyst roles. Bringing analytical depth, healthcare domain knowledge, and a track record of turning data into decisions that move the business.",
@@ -211,7 +211,6 @@ export const projects = [
     description:
       "Designed and executed a complete EDA-to-insight pipeline across two datasets (5,400+ combined records). Applied correlation matrices, pair plots, class imbalance analysis, and VIF-based multicollinearity checks. Benchmarked 5 algorithms across 5 random states. AdaBoost reached 94.1% stroke prediction accuracy and XGBoost reached 0.89 AUC-ROC, with age, hypertension, and glucose as primary risk drivers.",
     tech: ["Python", "Scikit-learn", "AdaBoost", "XGBoost", "Tableau"],
-    github: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics",
     live: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics/blob/main/Cardio%20Cast%20Project%20Report.pdf",
     image: "/cardio-cast-preview.png",
     featured: true,
@@ -222,7 +221,6 @@ export const projects = [
     description:
       "Predictive modeling project identifying hospital readmission risk for COPD patients using diabetic comorbidity data. Covers feature selection, model evaluation, and clinical insight generation with a focus on actionable recommendations for care teams and hospital operations.",
     tech: ["Python", "Machine Learning", "Healthcare Analytics", "Predictive Modeling"],
-    github: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data",
     live: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data/blob/main/COPD%20Readmission%20Project%20Report.pdf",
     featured: false,
     gradientStyle: "linear-gradient(135deg, #1a0a0f 0%, #5c1a2e 100%)",

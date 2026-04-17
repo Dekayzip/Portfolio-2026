@@ -68,11 +68,8 @@ export default function Hero() {
               <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100">
                 {siteConfig.headline[0]}
               </span>
-              <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100">
-                {siteConfig.headline[1]}
-              </span>
               <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100 italic">
-                {siteConfig.headline[2]}
+                {siteConfig.headline[1]}
               </span>
             </h1>
 
@@ -92,7 +89,7 @@ export default function Hero() {
             </p>
 
             {/* CTA buttons */}
-            <div className="hero-reveal reveal flex flex-wrap gap-3 mb-10">
+            <div className="hero-reveal reveal flex flex-wrap gap-4 mb-10">
               <button
                 onClick={() =>
                   document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
