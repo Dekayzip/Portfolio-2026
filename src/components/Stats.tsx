@@ -3,12 +3,12 @@
 import { useEffect, useRef } from "react";
 
 const kpis = [
-  { value: "1Y 4M+", label: "Industry Experience",  sub: "across 3 internships & roles" },
-  { value: "3+",     label: "Internships Held",      sub: "data, marketing & business" },
-  { value: "3.5",    label: "GPA",                   sub: "MS Data Science · DePaul" },
-  { value: "18",     label: "Certifications",         sub: "IBM · Stanford · Google · more" },
-  { value: "~42%",   label: "ETL Runtime Reduced",    sub: "Python pipeline optimization" },
-  { value: "~20%",   label: "Inbound Lead Growth",    sub: "Tableau dashboards · Gabriel AI" },
+  { value: "3",        label: "Internships",            sub: "data, marketing and healthcare" },
+  { value: "1.4 Years", label: "Industry Experience",   sub: "across analytics and data roles" },
+  { value: "100K+",   label: "Records Analyzed",        sub: "clinical and business datasets" },
+  { value: "3",        label: "Dashboards Shipped",     sub: "Tableau and Power BI" },
+  { value: "~42%",    label: "ETL Runtime Reduced",     sub: "Python pipeline optimization" },
+  { value: "~20%",    label: "Inbound Lead Growth",     sub: "Tableau dashboards, Gabriel AI" },
 ];
 
 export default function Stats() {

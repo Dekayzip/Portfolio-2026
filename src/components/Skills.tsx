@@ -1,10 +1,19 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { skills } from "@/data/content";
+
+const PINNED_CERTS = new Set([
+  "IBM Data Science Professional",
+  "Introduction to Statistics – Stanford",
+  "Azure Fundamentals AZ-900 – Microsoft",
+  "Google Cloud Big Data & ML Fundamentals – Google",
+  "AI & Business Strategy – NASBA",
+]);
 
 export default function Skills() {
   const sectionRef = useRef<HTMLElement>(null);
+  const [certShowAll, setCertShowAll] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,17 +78,34 @@ export default function Skills() {
 
               {/* Tech tags */}
               {skill.category === "Certifications" ? (
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
-                  {skill.items.map((item) => (
-                    <span
-                      key={item}
-                      className="text-xs px-2.5 py-1 rounded-full bg-white/[0.06] text-zinc-400 border border-white/[0.1] group-hover:border-white/[0.2] group-hover:text-zinc-300 transition-colors truncate"
-                      title={item}
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+                <>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+                    {skill.items.filter(item => PINNED_CERTS.has(item)).map((item) => (
+                      <span
+                        key={item}
+                        className="text-xs px-2.5 py-1 rounded-full bg-white/[0.06] text-zinc-400 border border-white/[0.1] group-hover:border-white/[0.2] group-hover:text-zinc-300 transition-colors truncate"
+                        title={item}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                    {certShowAll && skill.items.filter(item => !PINNED_CERTS.has(item)).map((item) => (
+                      <span
+                        key={item}
+                        className="text-xs px-2.5 py-1 rounded-full bg-white/[0.06] text-zinc-400 border border-white/[0.1] group-hover:border-white/[0.2] group-hover:text-zinc-300 transition-colors truncate"
+                        title={item}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                  <button
+                    onClick={() => setCertShowAll(v => !v)}
+                    className="mt-3 text-xs text-zinc-400 hover:text-zinc-300 transition-colors"
+                  >
+                    {certShowAll ? "Show less" : "Show all certifications"}
+                  </button>
+                </>
               ) : (
                 <div className="flex flex-wrap gap-1.5">
                   {skill.items.map((item) => (

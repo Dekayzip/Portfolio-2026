@@ -42,9 +42,9 @@ export default function About() {
               About Me
             </p>
             <h2 className="reveal text-4xl sm:text-5xl font-black tracking-tighter text-zinc-900 dark:text-zinc-100 max-w-xl leading-tight">
-              Welcome to my
+              I turn messy data
               <br />
-              <span className="italic">data world.</span>
+              <span className="italic">into decisions.</span>
             </h2>
           </div>
 

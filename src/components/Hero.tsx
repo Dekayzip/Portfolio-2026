@@ -96,14 +96,16 @@ export default function Hero() {
                 }
                 className="px-6 py-3 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
               >
-                View Projects →
+                See My Work
               </button>
-              <a
-                href={`mailto:${siteConfig.email}`}
+              <button
+                onClick={() =>
+                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
+                }
                 className="px-6 py-3 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm font-semibold rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-200 hover:-translate-y-0.5"
               >
-                Get in Touch
-              </a>
+                Hire Me
+              </button>
             </div>
 
             {/* Social links */}
@@ -133,8 +135,10 @@ export default function Hero() {
               >
                 <Mail size={18} />
               </a>
-              <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-700" />
-              <span className="text-xs text-zinc-400 dark:text-zinc-500">{siteConfig.location}</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-500 border border-green-500/20">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                Open to Work · Chicago, IL
+              </span>
             </div>
           </div>
 
