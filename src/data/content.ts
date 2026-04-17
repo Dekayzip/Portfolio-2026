@@ -204,7 +204,7 @@ export const projects = [
     tech: ["Python", "SQL", "Pandas", "Scikit-learn", "Healthcare Analytics"],
     featured: true,
     status: "In Progress",
-    gradient: "from-blue-950 to-cyan-900",
+    gradientStyle: "linear-gradient(135deg, #0a1628 0%, #0e4f5c 100%)",
   },
   {
     title: "Cardio Cast: Stroke Risk Prediction",
@@ -225,7 +225,7 @@ export const projects = [
     github: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data",
     live: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data/blob/main/COPD%20Readmission%20Project%20Report.pdf",
     featured: false,
-    gradient: "from-rose-950 to-pink-900",
+    gradientStyle: "linear-gradient(135deg, #1a0a0f 0%, #5c1a2e 100%)",
   },
   {
     title: "Food Wastage Prediction: WLS Regression",
@@ -246,6 +246,6 @@ export const projects = [
     github: "https://github.com/Dekayzip/Marketing-Campaign-Analysis",
     live: "https://github.com/Dekayzip/Marketing-Campaign-Analysis/blob/main/Predictive%20Analytics%20for%20Marketing%20Campaign.pdf",
     featured: false,
-    gradient: "from-violet-950 to-purple-900",
+    gradientStyle: "linear-gradient(135deg, #120a1a 0%, #3d1a5c 100%)",
   },
 ];
