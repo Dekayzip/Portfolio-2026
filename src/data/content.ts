@@ -204,7 +204,7 @@ export const projects = [
     tech: ["Python", "SQL", "Pandas", "Scikit-learn", "Healthcare Analytics"],
     featured: true,
     status: "In Progress",
-    gradient: "from-indigo-500 to-blue-600",
+    gradient: "from-blue-950 to-cyan-900",
   },
   {
     title: "Cardio Cast: Stroke Risk Prediction",
@@ -213,6 +213,7 @@ export const projects = [
     tech: ["Python", "Scikit-learn", "AdaBoost", "XGBoost", "Tableau"],
     github: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics",
     live: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics/blob/main/Cardio%20Cast%20Project%20Report.pdf",
+    image: "/cardio-cast-preview.png",
     featured: true,
     gradient: "from-teal-500 to-emerald-600",
   },
@@ -224,7 +225,7 @@ export const projects = [
     github: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data",
     live: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data/blob/main/COPD%20Readmission%20Project%20Report.pdf",
     featured: false,
-    gradient: "from-amber-500 to-orange-600",
+    gradient: "from-rose-950 to-pink-900",
   },
   {
     title: "Food Wastage Prediction: WLS Regression",
@@ -233,6 +234,7 @@ export const projects = [
     tech: ["R", "WLS Regression", "Statistical Modeling", "Supply Chain"],
     github: "https://github.com/Dekayzip/Food-Wastage-Prediction-WLS",
     live: "https://github.com/Dekayzip/Food-Wastage-Prediction-WLS/blob/main/Food%20Wastage%20Project%20Report.pdf",
+    image: "/food-wastage-preview.png",
     featured: false,
     gradient: "from-pink-500 to-rose-600",
   },
@@ -244,6 +246,6 @@ export const projects = [
     github: "https://github.com/Dekayzip/Marketing-Campaign-Analysis",
     live: "https://github.com/Dekayzip/Marketing-Campaign-Analysis/blob/main/Predictive%20Analytics%20for%20Marketing%20Campaign.pdf",
     featured: false,
-    gradient: "from-violet-500 to-purple-600",
+    gradient: "from-violet-950 to-purple-900",
   },
 ];

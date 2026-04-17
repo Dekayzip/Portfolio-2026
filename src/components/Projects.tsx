@@ -55,11 +55,14 @@ export default function Projects() {
               }`}
             >
               {/* Thumbnail */}
-              <div className={`h-44 relative overflow-hidden bg-gradient-to-br ${project.gradient}`}>
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_60%)]"
-                />
+              <div className="h-44 relative overflow-hidden">
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                ) : project.gradient ? (
+                  <div className={`w-full h-full bg-gradient-to-br ${project.gradient}`} />
+                ) : (
+                  <div className="w-full h-full bg-zinc-800" />
+                )}
                 {project.featured && (
                   <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
                     Featured

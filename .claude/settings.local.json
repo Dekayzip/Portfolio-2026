@@ -27,7 +27,13 @@
       "Read(//c/Users/dhara/AppData/Local/Programs/**)",
       "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\dhara && \\\\\"AppData\\\\Local\\\\Programs\\\\GitHub CLI\\\\gh.exe\\\\\" auth status > %TEMP%\\\\ghtest.txt 2>&1 && type %TEMP%\\\\ghtest.txt\")",
       "Bash(powershell.exe -Command \"& 'C:\\\\Users\\\\dhara\\\\AppData\\\\Local\\\\Programs\\\\GitHub CLI\\\\gh.exe' auth status\")",
-      "Bash(powershell.exe -Command \"& 'C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe' auth status\")"
+      "Bash(powershell.exe -Command \"& 'C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe' auth status\")",
+      "Bash(cp \"/c/Users/dhara/OneDrive/Desktop/Screenshot_2026-04-16_222026.png\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/cardio-cast-preview.png\")",
+      "Bash(cp \"/c/Users/dhara/OneDrive/Desktop/Screenshot_2026-04-16_222340.png\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/food-wastage-preview.png\")",
+      "Read(//c/Users/dhara/OneDrive/Desktop/**)",
+      "Bash(cp \"/c/Users/dhara/OneDrive/Desktop/Screenshot 2026-04-16 222026.png\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/cardio-cast-preview.png\")",
+      "Bash(cp \"/c/Users/dhara/OneDrive/Desktop/Screenshot 2026-04-16 222340.png\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/food-wastage-preview.png\")",
+      "Read(//c/c/Users/dhara/OneDrive/Desktop/Portfolio/src/components/**)"
     ]
   }
 }
