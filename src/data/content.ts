@@ -198,44 +198,52 @@ export const earlierExperience: Array<{
 
 export const projects = [
   {
-    title: "Cardio Cast – Predictive Analytics",
+    title: "MIMIC-IV Hospital Readmission Prediction",
     description:
-      "Designed and executed a complete EDA-to-insight pipeline across two datasets (5,400+ combined records); applied correlation matrices, pair plots, class imbalance analysis, and VIF-based multicollinearity checks. Benchmarked 5 algorithms across 5 random states; AdaBoost reached 94.1% stroke accuracy and XGBoost reached 0.89 AUC-ROC, with age, hypertension, and glucose as primary risk drivers.",
-    tech: ["Python", "Scikit-learn", "Tableau", "AdaBoost", "XGBoost"],
-    github: "#", // TODO: add real GitHub link
-    live: "#", // TODO: add live demo / Tableau public link
+      "Capstone project predicting 30-day hospital readmission risk using the MIMIC-IV v3.1 clinical database (PhysioNet credentialed access). Includes SQL-based cohort extraction, EDA across patient demographics, diagnoses, and lab results, and a machine learning classification pipeline targeting readmission risk. Built in Python with a teammate, currently in active development.",
+    tech: ["Python", "SQL", "Pandas", "Scikit-learn", "Healthcare Analytics"],
     featured: true,
+    status: "In Progress",
     gradient: "from-indigo-500 to-blue-600",
   },
   {
-    title: "Rainfall Prediction – Classification Model",
+    title: "Cardio Cast: Stroke Risk Prediction",
     description:
-      "Machine learning pipeline predicting rainfall occurrence from historical meteorological data. Engineered features across weather variables (temperature, humidity, wind speed, pressure) and benchmarked Logistic Regression, Random Forest, and XGBoost classifiers, evaluating tradeoffs via accuracy, precision-recall curves, and ROC-AUC. Includes full EDA and model performance comparisons.",
-    tech: ["Python", "Scikit-learn", "Pandas", "Random Forest", "XGBoost"],
-    github: "https://github.com/dekayzip/Rainfall-Prediction",
-    live: "#",
+      "Designed and executed a complete EDA-to-insight pipeline across two datasets (5,400+ combined records). Applied correlation matrices, pair plots, class imbalance analysis, and VIF-based multicollinearity checks. Benchmarked 5 algorithms across 5 random states. AdaBoost reached 94.1% stroke prediction accuracy and XGBoost reached 0.89 AUC-ROC, with age, hypertension, and glucose as primary risk drivers.",
+    tech: ["Python", "Scikit-learn", "AdaBoost", "XGBoost", "Tableau"],
+    github: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics",
+    live: "https://github.com/Dekayzip/Cardio-Cast-Predictive-Analytics/blob/main/Cardio%20Cast%20Project%20Report.pdf",
     featured: true,
     gradient: "from-teal-500 to-emerald-600",
   },
   {
-    title: "Food Wastage Prediction – WLS Regression",
+    title: "COPD Readmission Prediction",
     description:
-      "Built a Weighted Least Squares regression model in R on 228 event records across 11 supply-chain variables (R² = 0.76). Selected WLS over OLS after diagnosing heteroscedasticity via Breusch-Pagan testing; Number of Guests and Quantity of Food emerged as strongest predictors (p<0.001), with meat and baked goods showing highest wastage rates. Findings translated into procurement sizing and portion-control recommendations.",
-    tech: ["R", "WLS Regression", "Statistical Modeling", "Supply Chain"],
-    github: "#", // TODO
-    live: "#", // TODO
+      "Predictive modeling project identifying hospital readmission risk for COPD patients using diabetic comorbidity data. Covers feature selection, model evaluation, and clinical insight generation with a focus on actionable recommendations for care teams and hospital operations.",
+    tech: ["Python", "Machine Learning", "Healthcare Analytics", "Predictive Modeling"],
+    github: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data",
+    live: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data/blob/main/COPD%20Readmission%20Project%20Report.pdf",
     featured: false,
     gradient: "from-amber-500 to-orange-600",
   },
   {
-    title: "Blockchain-Secured Telemedicine Platform",
+    title: "Food Wastage Prediction: WLS Regression",
     description:
-      "Co-designed a HIPAA-aware cloud EMR prototype with role-based authentication (patient/doctor/admin), blockchain-based interaction logging for tamper-resistant audit trails, and a Bag-of-Words ML classifier for automated disease categorization and record anonymization. Published in IRJMETS Vol. 6 (Impact Factor: 7.868).",
-    tech: ["Blockchain", "Machine Learning", "Cloud", "Full-Stack", "HIPAA"],
-    github: "#",
-    live: "https://drive.google.com/drive/folders/17Nvg7zeeF1bUhqZml7rZVanzI3Wd69Eo",
-    image: "/blockchain-figure.png",
+      "Built a Weighted Least Squares regression model in R on 228 event records across 11 supply-chain variables (R squared = 0.76). Selected WLS over OLS after diagnosing heteroscedasticity via Breusch-Pagan testing. Number of Guests and Quantity of Food emerged as strongest predictors (p less than 0.001), with meat and baked goods showing highest wastage rates. Findings translated into procurement sizing and portion-control recommendations.",
+    tech: ["R", "WLS Regression", "Statistical Modeling", "Supply Chain"],
+    github: "https://github.com/Dekayzip/Food-Wastage-Prediction-WLS",
+    live: "https://github.com/Dekayzip/Food-Wastage-Prediction-WLS/blob/main/Food%20Wastage%20Project%20Report.pdf",
     featured: false,
     gradient: "from-pink-500 to-rose-600",
+  },
+  {
+    title: "Marketing Campaign Optimization: Predictive Analytics Case Study",
+    description:
+      "End-to-end analytics case study in R examining campaign performance across customer segments. Conducted full EDA, built predictive models to identify high-converting segments, and delivered recommendations on targeting strategy and budget allocation. Designed to answer a business question: which customers convert and why, with findings framed for both analytical and non-technical stakeholders.",
+    tech: ["R", "Predictive Analytics", "Business Intelligence", "Segmentation", "Statistical Modeling"],
+    github: "https://github.com/Dekayzip/Marketing-Campaign-Analysis",
+    live: "https://github.com/Dekayzip/Marketing-Campaign-Analysis/blob/main/Predictive%20Analytics%20for%20Marketing%20Campaign.pdf",
+    featured: false,
+    gradient: "from-violet-500 to-purple-600",
   },
 ];

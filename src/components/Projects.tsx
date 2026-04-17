@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/data/content";
 
@@ -55,31 +54,25 @@ export default function Projects() {
                 project.featured ? "ring-1 ring-zinc-900/5 dark:ring-white/[0.08]" : ""
               }`}
             >
-              {/* Thumbnail — image if provided, otherwise gradient */}
-              <div className={`h-44 relative overflow-hidden ${!project.image ? `bg-gradient-to-br ${project.gradient}` : "bg-zinc-100 dark:bg-zinc-800"}`}>
-                {project.image ? (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover object-center"
-                  />
-                ) : (
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_60%)]"
-                  />
-                )}
+              {/* Thumbnail */}
+              <div className={`h-44 relative overflow-hidden bg-gradient-to-br ${project.gradient}`}>
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_60%)]"
+                />
                 {project.featured && (
                   <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
                     Featured
                   </span>
                 )}
-                {!project.image && (
-                  <div className="absolute bottom-4 left-4 text-white/30 font-black text-6xl leading-none select-none">
-                    0{i + 1}
-                  </div>
+                {project.status === "In Progress" && (
+                  <span className="absolute top-3 right-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
+                    In Progress
+                  </span>
                 )}
+                <div className="absolute bottom-4 left-4 text-white/30 font-black text-6xl leading-none select-none">
+                  0{i + 1}
+                </div>
               </div>
 
               {/* Card body */}
@@ -104,28 +97,34 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-white/[0.08]">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                    aria-label={`GitHub – ${project.title}`}
-                  >
-                    <Github size={14} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                    aria-label={`Live – ${project.title}`}
-                  >
-                    <ExternalLink size={14} />
-                    <span>Live ↗</span>
-                  </a>
-                </div>
+                {(project.github || project.live) && (
+                  <div className="flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-white/[0.08]">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                        aria-label={`GitHub - ${project.title}`}
+                      >
+                        <Github size={14} />
+                        <span>Code</span>
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                        aria-label={`Live - ${project.title}`}
+                      >
+                        <ExternalLink size={14} />
+                        <span>Live ↗</span>
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </article>
           ))}
