@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[85vh] flex flex-col justify-center pt-16 bg-white dark:bg-[#111113] overflow-hidden transition-colors duration-200"
+      className="relative min-h-[80vh] flex flex-col justify-center pt-8 bg-white dark:bg-[#111113] overflow-hidden transition-colors duration-200"
     >
       {/* Subtle background grid */}
       <div
@@ -65,10 +65,10 @@ export default function Hero() {
 
             {/* Main headline — 3 lines */}
             <h1 className="hero-reveal reveal mb-6">
-              <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100">
                 {siteConfig.headline[0]}
               </span>
-              <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100 italic">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9] text-zinc-900 dark:text-zinc-100 italic">
                 {siteConfig.headline[1]}
               </span>
             </h1>
