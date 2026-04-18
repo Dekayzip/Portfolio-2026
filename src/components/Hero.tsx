@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-16 bg-white dark:bg-[#111113] overflow-hidden transition-colors duration-200"
+      className="relative min-h-[85vh] flex flex-col justify-center pt-16 bg-white dark:bg-[#111113] overflow-hidden transition-colors duration-200"
     >
       {/* Subtle background grid */}
       <div
@@ -84,7 +84,7 @@ export default function Hero() {
             </p>
 
             {/* Availability */}
-            <p className="hero-reveal reveal text-xs text-zinc-400 dark:text-zinc-500 max-w-lg mb-8">
+            <p className="hero-reveal reveal text-xs text-zinc-400 dark:text-zinc-500 max-w-lg mb-6">
               {siteConfig.availability}
             </p>
 

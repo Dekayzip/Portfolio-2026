@@ -73,7 +73,7 @@ export default function Projects() {
                     In Progress
                   </span>
                 )}
-                <div className="absolute bottom-4 left-4 text-zinc-900/70 dark:text-white/40 font-black text-6xl leading-none select-none">
+                <div className="absolute bottom-4 left-4 text-white mix-blend-difference font-black text-6xl leading-none select-none">
                   0{i + 1}
                 </div>
               </div>

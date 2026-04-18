@@ -9,8 +9,8 @@ export const siteConfig = {
   tagline: "data · dashboards · decisions",
   headline: ["Data, Business & Healthcare", "Analyst."],
   subheadline: "MS Data Science @ DePaul University · Chicago, IL",
-  bio: "MS Data Science candidate with internship experience building automated reporting workflows, funnel and KPI dashboards, and segmentation analyses for an early-stage startup. Skilled in Python, SQL, and Tableau, with a focus on turning messy data into clear recommendations for founders and cross-functional teams.",
-  availability: "Open to Data Analyst, Business Analyst, Healthcare Data Analyst, and Growth Analyst roles. Bringing analytical depth, healthcare domain knowledge, and a track record of turning data into decisions that move the business.",
+  bio: "I have 1.4 years of industry experience across 3 internships spanning data analytics, marketing intelligence, and healthcare. I have analyzed over 100K patient and business records, reduced ETL pipeline runtime by 42% through Python optimization, and contributed to a 20% increase in inbound leads through data-driven reporting at an AI startup. My focus is turning messy, real-world data into clear recommendations for clinical and business teams.",
+  availability: "Currently completing my MS in Data Science at DePaul University with a concentration in Healthcare Analytics. Open to Data Analyst, Healthcare Data Analyst, and Business Analyst roles starting August 2026.",
 
   // --- Contact ---
   email: "dharanirrnk@gmail.com",

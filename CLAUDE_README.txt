@@ -235,3 +235,48 @@ CHANGELOG (session-by-session)
       falls back to gradient if no image set
 
 ================================================================================
+
+---
+
+SESSION UPDATE: GPT AND COUSIN PORTFOLIO REVIEW CHANGES
+
+BATCH 1 COMPLETED (GPT mechanical fixes):
+- Fixed hero headline spacing: now reads "Data, Business & Healthcare Analyst"
+- Fixed merged CTA buttons spacing in hero
+- Fixed merged footer nav links gap
+- Fixed skills section numbering from "0 1" to "01"
+- Renamed all project "Live" buttons to "Report"
+- Removed Code button from Cardio Cast and COPD cards (repos have no source code)
+- Renamed skills heading to "What I bring to the table"
+
+BATCH 2 COMPLETED (cousin and GPT combined):
+- Added green pulsing "Open to Work, Chicago IL" badge in hero
+- Renamed hero CTAs to "Hire Me" (scrolls to contact) and "See My Work" (scrolls to projects)
+- Replaced metrics strip content with 6 proof-based stats: 3 internships, 1.4 years experience, 100K+ records, 3 dashboards, 42% ETL reduction, 20% lead growth
+- Replaced About heading with "I turn messy data into decisions."
+- Added Resume dropdown in navbar with Analytics Resume and Healthcare Resume options
+- Collapsed certifications behind a Show All toggle, 5 visible by default
+
+PENDING PROMPT (generated, not yet run):
+- Tighten hero vertical spacing so CTAs visible without scrolling
+- Replace metrics grid with single dark horizontal proof strip to preserve alternating light/dark section pattern
+- Adaptive project card numbers: white with shadow on images, white/30 on dark gradients, zinc on fallback
+- Rewrite About left paragraph with experience proof prose, remove hero repetition
+- Second About paragraph updated to focus on August 2026 availability
+
+CURRENT PROJECT CARD ORDER:
+1. MIMIC-IV Hospital Readmission (Featured, In Progress, no links, dark teal gradient)
+2. Cardio Cast Stroke Risk Prediction (Featured, Report link to PDF, correlation matrix image)
+3. COPD Readmission Prediction (Report link to PDF, dark rose gradient)
+4. Food Wastage Prediction WLS (Code and Report links, violin plot image)
+5. Marketing Campaign Optimization Case Study (Code and Report links, dark violet gradient)
+
+DESIGN DECISIONS MADE:
+- Alternating section colors must be preserved: Hero light, proof strip dark, About light, Skills dark, Projects light, Contact dark
+- Metrics strip kept as dark separator, content replaced not removed
+- No em-dashes anywhere in content or code
+- Gradient placeholders use inline style not Tailwind dynamic classes
+
+---
+
+================================================================================
