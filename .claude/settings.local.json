@@ -37,7 +37,8 @@
       "Bash(cp \"/c/Users/dhara/Downloads/DharaniK_Resume_Analytics.pdf\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/resume.pdf\")",
       "Bash(cp \"/c/Users/dhara/Downloads/DharaniK_Resume_Healthcare.pdf\" \"/c/Users/dhara/OneDrive/Desktop/Portfolio/public/resume_healthcare.pdf\")",
       "Read(//c/c/Users/dhara/OneDrive/Desktop/**)",
-      "Read(//c/Users/dhara/.claude/projects/c--Users-dhara-OneDrive-Desktop-Portfolio/memory/**)"
+      "Read(//c/Users/dhara/.claude/projects/c--Users-dhara-OneDrive-Desktop-Portfolio/memory/**)",
+      "Bash(code \"C:\\\\Users\\\\dhara\\\\OneDrive\\\\Desktop\\\\Portfolio\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\dhara\\.claude\\projects\\c--Users-dhara-OneDrive-Desktop-Portfolio\\memory"

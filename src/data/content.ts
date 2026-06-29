@@ -8,9 +8,9 @@ export const siteConfig = {
   initials: "DK",
   tagline: "data · dashboards · decisions",
   headline: ["Data, Business & Healthcare", "Analyst."],
-  subheadline: "MS Data Science @ DePaul University · Chicago, IL",
-  bio: "My analytics work has taken me from building competitive intelligence pipelines at an AI startup to translating public health datasets into dashboards for healthcare decision-makers. Along the way I have worked in Python, SQL, Tableau, and R across problems in marketing, operations, and clinical analytics. I am drawn to work where the output is not just a chart but a recommendation someone actually acts on.",
-  availability: "Currently completing my MS in Data Science at DePaul University with a concentration in Healthcare Analytics. Open to Data Analyst, Healthcare Data Analyst, and Business Analyst roles starting August 2026.",
+  subheadline: "MS Data Science, DePaul University (2026) · Chicago, IL",
+  bio: "My analytics work has taken me from building competitive intelligence pipelines at an AI startup to analyzing 50,000+ hospital admissions and presenting capacity-planning recommendations to healthcare professionals. Along the way I have worked in Python, SQL, Tableau, Power BI, and R across problems in marketing, operations, and clinical analytics. I am drawn to work where the output is not just a chart but a recommendation someone actually acts on.",
+  availability: "MS in Data Science from DePaul University (Healthcare Analytics concentration, GPA: 3.6). Open to Data Analyst, Healthcare Data Analyst, and Business Analyst roles.",
 
   // --- Contact ---
   email: "dharanirrnk@gmail.com",
@@ -41,8 +41,8 @@ export const education = [
     degree: "MS in Data Science",
     institution: "DePaul University",
     location: "Chicago, IL",
-    period: "Nov 2024 – Jun 2026",
-    details: "Concentration: Healthcare Analytics · GPA: 3.5",
+    period: "Sept 2024 – Jun 2026",
+    details: "Concentration: Healthcare Analytics · GPA: 3.6",
   },
   {
     degree: "B.Tech in Computer Science Engineering",
@@ -58,11 +58,11 @@ export const experience = [
     role: "Healthcare Data Analytics Extern",
     company: "TruBridge (via Extern)",
     location: "Remote",
-    period: "Apr 2026 – Present",
+    period: "Apr 2026 – Jun 2026",
     highlights: [
-      "Selected for TruBridge's 8-week healthcare data analytics externship focused on social determinants of health (SDOH) and their impact on patient outcomes, access to care, and public-health decision-making.",
-      "Defining an independent research question on SDOH factors (income, education, housing, care access); collecting and preprocessing public-health datasets in Python (Google Colab) and running statistical and correlational EDA to surface trends in health outcomes.",
-      "Building a Power BI dashboard and stakeholder presentation translating findings into clear recommendations for healthcare decision-makers, with weekly review sessions led by TruBridge analytics professionals.",
+      "Analyzed 50,057 hospital admissions and identified that medium-term stays (11 to 30 days) dominate bed capacity while departmental routing creates highly variable resource consumption (Chi-Square p < 0.001), surfacing early admission signals for predictive bed management.",
+      "Cleaned and preprocessed public healthcare data in Python (Google Colab), applying Min-Max scaling and log transformations; built a Power BI dashboard presenting LOS distribution, deposit skew, and departmental volatility to non-technical stakeholders.",
+      "Earned Top 10% Performer recognition; presented capacity-planning recommendations in a structured review with TruBridge analytics professionals.",
     ],
   },
   {
@@ -144,9 +144,26 @@ export const skills = [
     items: ["Git / GitHub", "REST APIs", "Google Sheets Automation", "LinkedIn API"],
   },
   {
+    category: "Healthcare Domain",
+    description: "Clinical analytics expertise for healthcare data problems",
+    items: [
+      "Readmission Risk",
+      "LOS Prediction",
+      "Patient Risk Stratification",
+      "HIPAA-Aligned Data Handling",
+      "MIMIC-IV",
+      "SDOH",
+      "ICD-9/ICD-10 (CCSR)",
+      "CDC HI-5 Framework",
+      "SHAP",
+      "Fairness Analysis",
+    ],
+  },
+  {
     category: "Certifications",
     description: "Verified expertise across data, cloud, and business domains",
     items: [
+      "TruBridge Top 10% Performer",
       "IBM Data Science Professional",
       "Generative AI for Data Scientists – IBM",
       "Data Science & AI for Healthcare – Birdify",
@@ -200,10 +217,11 @@ export const projects = [
   {
     title: "MIMIC-IV Hospital Readmission Prediction",
     description:
-      "Capstone project predicting 30-day hospital readmission risk using the MIMIC-IV v3.1 clinical database (PhysioNet credentialed access). Includes SQL-based cohort extraction, EDA across patient demographics, diagnoses, and lab results, and a machine learning classification pipeline targeting readmission risk. Built in Python with a teammate, currently in active development.",
-    tech: ["Python", "SQL", "Pandas", "Scikit-learn", "Healthcare Analytics"],
+      "Built an end-to-end ML pipeline on MIMIC-IV clinical data (546K admissions, 60,946 labeled cohort). Engineered 355 features from ICD-9/ICD-10 codes mapped to CCSR categories, demographics, LOS, and discharge disposition with patient-level train-test split to prevent data leakage. Benchmarked 12 models; selected Random Forest (AUC 0.6506, 74.2% recall) for minimal overfitting. Conducted fairness audit across race, gender, insurance, and age subgroups; applied stratified decision thresholds reducing racial FNR disparity by 86% without sacrificing overall AUC.",
+    tech: ["Python", "SQL", "Scikit-learn", "SHAP", "MIMIC-IV", "Fairness Analysis"],
     featured: true,
-    status: "In Progress",
+    github: "https://github.com/Dekayzip/MIMIC-IV-Readmission-Capstone",
+    live: "https://github.com/Dekayzip/MIMIC-IV-Readmission-Capstone/blob/main/30-Day_Hospital_Readmission_Prediction.pdf",
     gradientStyle: "linear-gradient(135deg, #0a1628 0%, #0e4f5c 100%)",
   },
   {
@@ -245,5 +263,15 @@ export const projects = [
     live: "https://github.com/Dekayzip/Marketing-Campaign-Analysis/blob/main/Predictive%20Analytics%20for%20Marketing%20Campaign.pdf",
     featured: false,
     gradientStyle: "linear-gradient(135deg, #120a1a 0%, #3d1a5c 100%)",
+  },
+  {
+    title: "Cloud EMR and Telemedicine Platform",
+    description:
+      "Co-designed a HIPAA-aware cloud EMR prototype with role-based authentication (patient, doctor, admin), blockchain-based interaction logging for tamper-resistant audit trails, and a Bag-of-Words ML classifier for automated disease categorization and record anonymization. Published in IRJMETS Vol. 6 (Impact Factor: 7.868).",
+    tech: ["Blockchain", "Machine Learning", "Cloud", "HIPAA", "Healthcare"],
+    live: "https://www.irjmets.com/uploadedfiles/paper/issue_6_june_2024/58800/final/fin_irjmets1717750208.pdf",
+    liveLabel: "Publication ↗",
+    featured: false,
+    gradientStyle: "linear-gradient(135deg, #0a1a0a 0%, #1a3d2e 100%)",
   },
 ];

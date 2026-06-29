@@ -164,7 +164,7 @@ export default function Hero() {
                 onMouseLeave={handleMouseLeave}
               >
                 <Image
-                  src="/profile.jpeg"
+                  src="/profile.png"
                   alt="Dharani Kommireddi"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-105"

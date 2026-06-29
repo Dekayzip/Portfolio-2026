@@ -123,7 +123,7 @@ export default function Projects() {
                         aria-label={`Live - ${project.title}`}
                       >
                         <ExternalLink size={14} />
-                        <span>Report ↗</span>
+                        <span>{project.liveLabel ?? "Report ↗"}</span>
                       </a>
                     )}
                   </div>

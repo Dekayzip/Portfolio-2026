@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { skills } from "@/data/content";
 
 const PINNED_CERTS = new Set([
+  "TruBridge Top 10% Performer",
   "IBM Data Science Professional",
   "Introduction to Statistics – Stanford",
   "Azure Fundamentals AZ-900 – Microsoft",
