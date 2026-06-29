@@ -222,7 +222,7 @@ export const projects = [
     featured: true,
     github: "https://github.com/Dekayzip/MIMIC-IV-Readmission-Capstone",
     live: "https://github.com/Dekayzip/MIMIC-IV-Readmission-Capstone/blob/main/30-Day_Hospital_Readmission_Prediction.pdf",
-    gradientStyle: "linear-gradient(135deg, #0a1628 0%, #0e4f5c 100%)",
+    image: "/mimic.png",
   },
   {
     title: "Cardio Cast: Stroke Risk Prediction",
@@ -241,7 +241,7 @@ export const projects = [
     tech: ["Python", "Machine Learning", "Healthcare Analytics", "Predictive Modeling"],
     live: "https://github.com/Dekayzip/COPD-Readmission-Diabetic-Data/blob/main/COPD%20Readmission%20Project%20Report.pdf",
     featured: false,
-    gradientStyle: "linear-gradient(135deg, #1a0a0f 0%, #5c1a2e 100%)",
+    image: "/COPD.png",
   },
   {
     title: "Food Wastage Prediction: WLS Regression",
@@ -262,7 +262,7 @@ export const projects = [
     github: "https://github.com/Dekayzip/Marketing-Campaign-Analysis",
     live: "https://github.com/Dekayzip/Marketing-Campaign-Analysis/blob/main/Predictive%20Analytics%20for%20Marketing%20Campaign.pdf",
     featured: false,
-    gradientStyle: "linear-gradient(135deg, #120a1a 0%, #3d1a5c 100%)",
+    image: "/marketing.png",
   },
   {
     title: "Cloud EMR and Telemedicine Platform",
@@ -272,6 +272,6 @@ export const projects = [
     live: "https://www.irjmets.com/uploadedfiles/paper/issue_6_june_2024/58800/final/fin_irjmets1717750208.pdf",
     liveLabel: "Publication ↗",
     featured: false,
-    gradientStyle: "linear-gradient(135deg, #0a1a0a 0%, #1a3d2e 100%)",
+    image: "/cloud.png",
   },
 ];
