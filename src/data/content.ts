@@ -48,7 +48,7 @@ export const education = [
     degree: "B.Tech in Computer Science Engineering",
     institution: "Malla Reddy Engineering College",
     location: "India",
-    period: "2020 – 2024",
+    period: "Nov 2020 – Jun 2024",
     details: "Major: Computer Science · Minor: Data Science",
   },
 ];

@@ -51,9 +51,6 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left: bio + education */}
             <div>
-              <p className="reveal text-base text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
-                {siteConfig.bio}
-              </p>
               <p className="reveal text-sm text-zinc-500 dark:text-zinc-500 leading-relaxed mb-10">
                 {siteConfig.availability}
               </p>
