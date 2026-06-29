@@ -58,8 +58,6 @@ export default function Projects() {
               <div className="h-44 relative overflow-hidden">
                 {project.image ? (
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-                ) : project.gradientStyle ? (
-                  <div style={{ background: project.gradientStyle }} className="w-full h-full" />
                 ) : (
                   <div className="w-full h-full bg-zinc-800" />
                 )}
