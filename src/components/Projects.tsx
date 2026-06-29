@@ -68,11 +68,6 @@ export default function Projects() {
                     Featured
                   </span>
                 )}
-                {project.status === "In Progress" && (
-                  <span className="absolute top-3 right-3 text-[10px] font-bold tracking-widest uppercase text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
-                    In Progress
-                  </span>
-                )}
                 <div className="absolute bottom-4 left-4 text-white mix-blend-difference font-black text-6xl leading-none select-none">
                   0{i + 1}
                 </div>
